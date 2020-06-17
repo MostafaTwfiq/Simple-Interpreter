@@ -83,7 +83,7 @@ Operators precedence:
 |==            |!=  |    |    |    |    |    |    |    |       |    |
 |&             |    |    |    |    |    |    |    |    |       |    |
 |^             |    |    |    |    |    |    |    |    |       |    |
-|&#124;            |    |    |    |    |    |    |    |    |       |    |
+|&#124;        |    |    |    |    |    |    |    |    |       |    |
 |&&            |    |    |    |    |    |    |    |    |       |    |
 |&#124;&#124;  |    |    |    |    |    |    |    |    |       |    |
 |=             |\*= |/=  |%=  |+=  |-=  |<<= |\>>=|&=  |&#124;=|^=  |
@@ -97,8 +97,8 @@ Operators precedence:
 **If statements:**
 
 > The if statement should start with the key word `if` then the `condition` then `:`.\
-> After that you can write the scope  of the function.\
-> Then you can close the condition with the key word `endif`.
+> After that you can write the scope  of the if statement.\
+> Then you can close the if statement with the key word `endif`.
 
 ```
 if #Condition# :
@@ -120,7 +120,7 @@ endif
 
 **Label statement:**
 
-> The label statement should start with a valid variable declaring `labelName` then a colon `:`.\
+> The label statement should start with a valid variable name `labelName` then a colon `:`.\
 > If you want to go to the label statement all what you need is to use the key word `goto` then write the label name `labelName`.
 
 ```
@@ -157,7 +157,7 @@ function #functionName# ( # parameters #) :
 endFunction
 ```
 
-and to call it:
+and to call the function:
 
 ```
 #functionName# (# parameters #)
@@ -230,7 +230,7 @@ endLoop
 
 **Comments:**
 
-> To declare a variable all what you need is to start the line with two forward slashes `//` then the `comment`.
+> To declare a comment all what you need is to start the line with two forward slashes `//` then the `comment`.
 
 ```
 // #comment#
@@ -251,7 +251,7 @@ endLoop
  2. You can load a ready text file that you can edit, compile and save.
  3. You can start to write a new code that you can compile and save.
 
-**Some key words you need to know wile you are writing a code:**
+**Some key words you need to know while you are writing a code:**
 
  - The key word `EDIT`
 
