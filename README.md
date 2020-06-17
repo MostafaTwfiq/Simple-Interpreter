@@ -72,26 +72,26 @@
 Operators precedence:
 
 
-|1     |2   |3   |4   |5   |6   |7   |8   |9   |10     |11  |
-|------|----|----|----|----|----|----|----|----|-------|----|
-|!     |    |    |    |    |    |    |    |    |       |    |
-|\*\*  |    |    |    |    |    |    |    |    |       |    |
-|*     |/   |%   |    |    |    |    |    |    |       |    |
-|+     |-   |    |    |    |    |    |    |    |       |    |
-|<<    |>>  |    |    |    |    |    |    |    |       |    |
-|<     |<=  |\>  |>=  |    |    |    |    |    |       |    |
-|==    |!=  |    |    |    |    |    |    |    |       |    |
-|&     |    |    |    |    |    |    |    |    |       |    |
-|^     |    |    |    |    |    |    |    |    |       |    |
-|\|    |    |    |    |    |    |    |    |    |       |    |
-|&&    |    |    |    |    |    |    |    |    |       |    |
-|\|\|  |    |    |    |    |    |    |    |    |       |    |
-|=     |\*= |/=  |%=  |+=  |-=  |<<= |\>>=|&=  |&#124;=|^=  |
+|1             |2   |3   |4   |5   |6   |7   |8   |9   |10     |11  |
+|--------------|----|----|----|----|----|----|----|----|-------|----|
+|!             |    |    |    |    |    |    |    |    |       |    |
+|\*\*          |    |    |    |    |    |    |    |    |       |    |
+|*             |/   |%   |    |    |    |    |    |    |       |    |
+|+             |-   |    |    |    |    |    |    |    |       |    |
+|<<            |>>  |    |    |    |    |    |    |    |       |    |
+|<             |<=  |\>  |>=  |    |    |    |    |    |       |    |
+|==            |!=  |    |    |    |    |    |    |    |       |    |
+|&             |    |    |    |    |    |    |    |    |       |    |
+|^             |    |    |    |    |    |    |    |    |       |    |
+|&#124;            |    |    |    |    |    |    |    |    |       |    |
+|&&            |    |    |    |    |    |    |    |    |       |    |
+|&#124;&#124;  |    |    |    |    |    |    |    |    |       |    |
+|=             |\*= |/=  |%=  |+=  |-=  |<<= |\>>=|&=  |&#124;=|^=  |
 
-> Examples:\
-- > x *= - - - - - - 3 - + - + 4 * 4 + + + 2 \*\* 2\
-- > y = 2/6 + -3 - -2 + -4/-10 + 2\*6 + (7 + -7)\*-5/2/(3 - 5 + 4\*4)\
-- > s = 3 & 4 || 3 ^ 2\
+> Examples:
+- > x *= - - - - - - 3 - + - + 4 * 4 + + + 2 \*\* 2
+- > y = 2/6 + -3 - -2 + -4/-10 + 2\*6 + (7 + -7)\*-5/2/(3 - 5 + 4\*4)
+- > s = 3 & 4 || 3 ^ 2
 - > m = !((s = 5) && 0 ) || 3 <= 2
 
 **If statements:**
@@ -146,7 +146,7 @@ goto labelName
 
 **Functions:**
 
-> To declare a function you need to start with the key word `function` the the function name `functionName` then the parameter `(x , y)` and finally the colon `:`.
+> To declare a function you need to start with the key word `function` the the function name `functionName` then the parameter `(x , y)` and finally the colon `:`.\
 > Then you can write the scope of the function, and in the end of the function you need to close the function scope with the closing key word `endFunction`.
 > 
 > When you want to call the function all what you need is to write the function name `functionName` then the parameters `(1 , 2)`.
@@ -168,7 +168,7 @@ and to call it:
 
  - > function firstFunction (x , y) :\
    > //comment\
-   > endFunction\
+   > endFunction
    > 
    > firstFunction (1, 2)
 
@@ -182,7 +182,7 @@ and to call it:
 
 **While loops:**
 
-> To declare a while loop you need to start with the `while` key word then the `condition` then the colon `:`.
+> To declare a while loop you need to start with the `while` key word then the `condition` then the colon `:`.\
 > After that you can write the scope of the loop, then you need to close the loop with the key word `endLoop`.
 
 ```
@@ -206,7 +206,7 @@ endLoop
 
 **For loops:**
 
-> To declare a for loop you need to start with the `for` key word then the `control variable` after that a semicolon `;` then then `condition` after that a semicolon again `;` then `changing variable value` and finally the colon `:`.
+> To declare a for loop you need to start with the `for` key word then the `control variable` after that a semicolon `;` then then `condition` after that a semicolon again `;` then `changing variable value` and finally the colon `:`.\
 > After that you can write the scope of the loop, then when you want to close the loop you need to use the key word `endLoop`.
 
 ```
