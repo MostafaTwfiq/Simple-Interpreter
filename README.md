@@ -26,7 +26,7 @@
 **Declaring variables:**
 
 > Variable name must start with underscore `_` or an alphabet character `A to Z`.\
-> Variables name can consist of underscores or characters of digits.\
+> Variable name can consist of underscores or characters or digits.\
 > Examples:
 > - [x] name
 > - [x] _name
@@ -96,8 +96,8 @@ Operators precedence:
 
 **If statements:**
 
-> The if statement should start with the key word `if` then the `condition` then `:`.
-> After that you can write the scope  of the function.
+> The if statement should start with the key word `if` then the `condition` then `:`.\
+> After that you can write the scope  of the function.\
 > Then you can close the condition with the key word `endif`.
 
 ```
@@ -120,7 +120,7 @@ endif
 
 **Label statement:**
 
-> The label statement should start with the valid variable declaring `labelName` then then a colon `:`.
+> The label statement should start with a valid variable declaring `labelName` then a colon `:`.\
 > If you want to go to the label statement all what you need is to use the key word `goto` then write the label name `labelName`.
 
 ```
@@ -146,7 +146,7 @@ goto labelName
 
 **Functions:**
 
-> To declare a function you need to start with the key word `function` the the function name `functionName` then the parameter `(x , y)` and finally the colon `:`.\
+> To declare a function you need to start with the key word `function` then the function name `functionName` then the parameters `(x , y)` and finally the colon `:`.\
 > Then you can write the scope of the function, and in the end of the function you need to close the function scope with the closing key word `endFunction`.
 > 
 > When you want to call the function all what you need is to write the function name `functionName` then the parameters `(1 , 2)`.
@@ -206,7 +206,7 @@ endLoop
 
 **For loops:**
 
-> To declare a for loop you need to start with the `for` key word then the `control variable` after that a semicolon `;` then then `condition` after that a semicolon again `;` then `changing variable value` and finally the colon `:`.\
+> To declare a for loop you need to start with the `for` key word then the `control variable` after that a semicolon `;` then `condition` after that a semicolon again `;` then `changing variable value` and finally the colon `:`.\
 > After that you can write the scope of the loop, then when you want to close the loop you need to use the key word `endLoop`.
 
 ```
