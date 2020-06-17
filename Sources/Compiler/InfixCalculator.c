@@ -33,6 +33,7 @@
 // = *= /= %= += -= <<= >>= &= |= ^=           P1
 
 typedef enum operator {
+
     EQUAL = 1, NOTEQUAL, POWER,
     AND, OR, NOT,
     BITWISE_AND, XOR, BITWISE_OR,
@@ -45,6 +46,7 @@ typedef enum operator {
     PLUS_ASSIGN, MINUS_ASSIGN,
     BITWISE_AND_ASSIGN, BITWISE_OR_ASSIGN, XOR_ASSIGN,
     LEFT_SHIFT_ASSIGN, RIGHT_SHIFT_ASSIGN
+
 } operator;
 
 float *calculateInfix(AVLTree *symbolTable, char *infix) {
@@ -516,9 +518,11 @@ void notOperatorCase(AVLTree *symbolTable, StackC *postfixStack, int *notSignCou
 }
 
 void remainingOperatorsEvaluate(AVLTree *symbolTable, StackC *postfixStack, char *operator, int *errorFlag) {
+
     if (stackCGetLength(postfixStack) < 2) {
         *errorFlag = 1;
         return;
+
     }
 
     char *secondVariable = stackCPop(postfixStack);
@@ -767,7 +771,8 @@ int getPriority(char *c) {
     return 0;
 }
 
-int getOperatorLength(char *c){
+int getOperatorLength(char *c) {
+
     int length = strlen(c);
 
     if (length < 1) {
